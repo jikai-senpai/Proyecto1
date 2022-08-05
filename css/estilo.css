@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(2, 80, 197, 0.37) 0%, rgba(212, 63, 140, 0.39) 100%),url(../img/portada1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    padding: 0;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: -50px 0 0 -385px;
+    color: white;
+}
+
+.hamburger{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: white;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-text{
+    font-size: 20px;
+    border: 1px;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-text:hover{
+    background: linear-gradient(to top, #f43b47 0%, #5f53bb 100%);;
+    color: rgb(219, 208, 255);
+}
+
+.spread{
+    transform: translate(0);
+    z-index: 10;
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 55px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.616);
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.616);
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 350;
+    color: #695597;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.subtitulo-ensayos{
+    font-weight: 380;
+    color: #695597;
+}
+
+.subtitulo-card{
+    font-weight: 380;
+    color: #695597;
+}
+
+.contenedor-ensayos img{
+    width: 585px;
+}
+
+.trial{
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .card-2{
+    cursor: pointer;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-text-2{
+    font-size: 22px;
+  }
+
+  .c-b-2{
+    height: 7em;
+  }
+
+  /* Footer */
+
+  footer{
+    background: #856ebb;
+    padding-bottom: 0.1px;
+  }
+
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .contact-us{
+    width: 40%;
+    color: #fff;
+  }
+
+  .brand{
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .brand+p{
+    font-weight: 500;
+  }
+
+  .social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .social-media-icon:hover{
+    background: #fff;
+    color: #764ba2;
+  }
+
+  .social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+  }
