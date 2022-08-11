@@ -11,32 +11,92 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header" id="inicio">
-    <img src="img/menu.svg" alt="" class="hamburger">
-    <nav class="menu-navegacion">
-        <a class="menu-text" href="#inicio">Inicio</a>
-        <a class="menu-text" href="#aplicaciones">Aplicaciones</a>
-        <a class="menu-text" href="#ensayos">Ensayos</a>
-        <a class="menu-text" href="#contactos">Contactos</a>
-    </nav>
+  <nav class="nav">
+    <div class="logo">
+      <img src="img/logo1-1.png" alt="">
+    </div>
+    <ul class="menu">
+      <li><a class="menu-text" href="#inicio">Inicio</a></li>
+      <li><a class="menu-text" href="#aplicaciones">Aplicaciones</a></li>
+      <li><a class="menu-text" href="#ensayos">Ensayos</a></li>
+      <li><a class="menu-text" href="#contactos">Contactos</a></li>
+    </ul>
+    <ul class="menu">
+    <li><a class="menu-text sesion signin" href=""><img src="img/user.svg" alt="" class="icon">Iniciar sesión</a></li>
+    <li><a class="menu-text sesion register" href="">Registrarse</a></li>
+    <li><button class="button-hamb"><img src="img/hamburger.svg" alt="" class="hamburger"></button></li>
+      <nav class="menu-navegacion">
+        
+      </nav>
+    </ul>
+  </nav>
     <div class="contenedor head">
         <h1 class="titulo">Control de Calidad y Ensayos</h1>
         <p class="copy">Te ofrecemos la mejor versión de los materiales.</p>
     </div>
 </header>
-<br>
-<br>
-<br>
+<section class="moda1">
+  <div class="modal-container">
+    <h1 class="modal-tittle">Inicia sesión</h1>
+    <div class="formulario">
+      <div class="input-formulario">
+        <i class='bx bxs-envelope icon-account' ></i>
+        <input type="text" placeholder="Correo electrónico">
+      </div>
+      <div class="input-formulario">
+        <i class='bx bxs-key icon-account'></i>
+        <input type="password" placeholder="Contraseña">
+      </div>
+      <input type="submit" value="Iniciar sesión" class="button-account">
+      <p class="p-account">Inicia sesión y aprende de nuestro contenido.</p>
+      <p class="p-account">¿No tienes una cuenta? &nbsp; <a class="link-register link-account" href="">Registrate</a></p>
+        <input type="submit" value="Cerrar ventana" class="modal-close">
+    </div>
+  </div>
+</section>
+<section class="modal-2">
+  <div class="modal-container-2">
+    <h1 class="modal-tittle-2">Registrate</h1>
+    <div class="formulario">
+      <div class="input-formulario">
+        <i class='bx bxs-user icon-account'></i>
+        <input type="text" placeholder="Nombre">
+      </div>
+      <div class="input-formulario">
+        <i class='bx bxs-user icon-account'></i>
+        <input type="text" placeholder="Apellido">
+      </div>
+      <div class="input-formulario">
+        <i class='bx bxs-envelope icon-account' ></i>
+        <input type="text" placeholder="Correo electrónico">
+      </div>
+      <div class="input-formulario">
+        <i class='bx bxs-key icon-account'></i>
+        <input type="password" placeholder="Contraseña">
+      </div>
+      <div class="input-formulario">
+        <i class='bx bxs-key icon-account'></i>
+        <input type="password" placeholder="Verificar contraseña">
+      </div>
+      <input type="submit" value="Registrarte" class="button-account">
+      <p class="p-account">Registrate, acepta nuestra Condiciones de uso y Política de privacidad.</p>
+      <p class="p-account">¿Ya tienes una cuenta? &nbsp; <a class="link-signin link-account" href="">Inicia sesión</a></p>
+      <input type="submit" value="Cerrar ventana" class="modal-close-2">
+    </div>
+  </div>
+</section>
 <main>
-    <section class="applications contenedor" id="aplicaciones">
+    <section class="applications contenedor" id="aplicaciones" style="padding: 120px;">
         <h2 class="subtitulo text-center">Aplicaciones del Control de Calidad y Ensayos</h2>
         <div class="contenedor-aplicaciones">
             <div class="checklist-aplicaciones">
                 <div class="applications">
                     <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
+                        <div class="col col-princ">
                           <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                             <img src="img/investigacion.svg" class="card-img-top" alt="">
                             <div class="card-body">
@@ -45,7 +105,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col">
+                        <div class="col col-princ">
                         <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                             <img src="img/envida.svg" class="card-img-top" alt="">
                             <div class="card-body">
@@ -59,11 +119,7 @@
             </div>
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section class="trial" id="ensayos">
+    <section class="trial" id="ensayos" style="padding: 120px;">
         <div class="contenedor">
             <h2 class="contenedor text-center bg-dark" style="color:white">Ensayos</h2>
             <div class="contenedor-ensayos">
@@ -233,9 +289,12 @@
     </div>
     <div class="line"></div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/navbar.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/modal.js"></script>
 </body>
-</html#
+</html>
