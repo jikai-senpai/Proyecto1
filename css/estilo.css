@@ -244,6 +244,28 @@ header{
     object-fit: cover;
   }
 
+  .more-work{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+  }
+
+  .button-work{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #695597;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: all 0.3s ease;
+  }
+
+  .button-work:hover{
+    background-color: #453a94;
+    color: #fff;
+    padding: 5px 50px;
+  }
+
   .card-text-2{
     font-size: 22px;
   }
