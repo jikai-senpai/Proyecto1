@@ -151,6 +151,7 @@ header{
 .menu-navegacion{
     position: fixed;
     display: flex;
+    z-index: 10;
     top: 0;
     right: 0;
     width: 25vw;
@@ -237,6 +238,10 @@ header{
     cursor: pointer;
   }
 
+  .card-2:hover{
+    color: #695597;
+  }
+
   .swiper-slide img {
     display: block;
     width: 100%;
@@ -290,6 +295,31 @@ header{
     padding-bottom: 40px;
   }
 
+  .f-img{
+    height: 150px;
+  }
+
+  .af-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .a-footer{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .a-footer:hover{
+    background: #fff;
+    color: #695597;
+    border-radius: 5px;
+  }
+
+  .h-footer{
+    color: #fff;
+  }
+
   .contact-us{
     width: 40%;
     color: #fff;
@@ -305,7 +335,11 @@ header{
   }
 
   .social-media{
-    width: 50%;
+    margin-top: 5px;
+    position: absolute;
+    left: 890px;
+    top: 170px;
+    height: 30%;
     display: flex;
     justify-content: flex-end;
   }
@@ -323,7 +357,7 @@ header{
 
   .social-media-icon:hover{
     background: #fff;
-    color: #764ba2;
+    color: #695597;
   }
 
   .social-media-icon i{
@@ -567,4 +601,65 @@ header{
   display: block;
   height: 125px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(219deg) brightness(104%) contrast(102%);
+}
+
+/* pages - html */
+
+.header-2{
+  height: 40vh;
+  background-image: linear-gradient(to top, rgba(2, 80, 197, 0.37) 0%, rgba(212, 63, 140, 0.39) 100%),url(../img/portada1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.titulo-2{
+  font-size: 55px;
+  margin-bottom: px;
+  text-align: center;
+  color: #695597;
+}
+
+.c-2:hover{
+  color: #695597;
+}
+
+.search-1{
+  padding: 5px;
+}
+
+.search-1 input{
+  height: 30px;
+  padding: 0 20px;
+  font-size: 20px;
+  color: #695597;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 10px;
+}
+
+.search-button{
+  position: absolute;
+  top: 43px;
+  right: 268px;
+  width: 55px;
+  height: 55px;
+  background: #695597;
+  line-height: 55px;
+  transition: all .5s ease;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.nav.active .search-button{
+  top: 33px;
+  right: 258px;
+}
+
+.search-button:hover{
+  background: #453a94;
 }
