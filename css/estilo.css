@@ -50,11 +50,11 @@ header{
   filter: brightness(0) invert(37%) sepia(11%) saturate(2253%) hue-rotate(217deg) brightness(92%) contrast(86%);
 }
 
-.nav.active a{
+.nav.active .menu-text{
   color: #695597;
 }
 
-.nav.active a:hover{
+.nav.active .menu-text:hover{
   background: #695597;
   color: #fff;
 }
@@ -83,13 +83,7 @@ header{
   filter: invert(37%) sepia(11%) saturate(2253%) hue-rotate(217deg) brightness(92%) contrast(86%);
 }
 
-.icon{
-  margin-right: 10px;
-  margin-bottom: 5px;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(187deg) brightness(103%) contrast(104%);
-}
-
-.menu li a{
+.menu li .menu-text{
   font-size: 18px;
   color: #fff;
   text-decoration: none;
@@ -97,15 +91,11 @@ header{
   transition: all 0.5s ease;
 }
 
-.menu li a:hover{
+.menu li .menu-text:hover{
   padding: 5px 10px;
   background: #fff;
   color: #695597;
   border-radius: 15px;
-}
-
-.icon:hover{
-  filter: invert(37%) sepia(11%) saturate(2253%) hue-rotate(217deg) brightness(92%) contrast(86%);
 }
 
 .scrol{
@@ -160,15 +150,14 @@ header{
 
 .menu-navegacion{
     position: fixed;
+    display: flex;
     top: 0;
     right: 0;
     width: 25vw;
     height: 100%;
-    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
     transition: transform .3s ease-in-out;
     transform: translate(110%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
@@ -177,11 +166,6 @@ header{
 .spread{
     transform: translate(0);
     z-index: 10;
-}
-
-.menu-navegacion a{
-    color: #fff;
-    text-decoration: none;
 }
 
 .titulo{
@@ -514,4 +498,51 @@ header{
 
 .link-account:hover{
   color: #3f2f66;
+}
+
+/* Profile */
+
+.profile{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.profile-content{
+  padding-bottom: 140px;
+}
+
+.icon-profile{
+  font-size: 20px;
+  min-width: 50px;
+  text-align: center;
+  cursor: unset;
+}
+
+.box-line{
+  margin-top: 70px;
+}
+
+.profile-box{
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.profile-box:hover{
+  background-color: #fff;
+  padding: 5px 50px;
+  border-radius: 5px;
+  color: #695597;
+}
+
+.img-profile{
+  margin: auto;
+  display: block;
+  height: 125px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(219deg) brightness(104%) contrast(102%);
 }
